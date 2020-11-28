@@ -1,3 +1,5 @@
+import { api } from "../services/api";
+
 const SET_TRACKS = "SET_TRACKS";
 
 let initialState = {
@@ -20,5 +22,14 @@ const tracksReducer = (state = initialState, action) => {
 }
 
 export const setTracks = (tracks) => ({ type: SET_TRACKS, tracks })
+
+export const getUserThunk = () => {
+  return (dispatch) => {
+    api.getTopTracks()
+    .then(data => {
+      dispatch(setTracks(data.tracks.track));
+    })
+  }
+}
 
 export default tracksReducer;
