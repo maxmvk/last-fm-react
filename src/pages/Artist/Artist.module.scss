@@ -1,0 +1,39 @@
+@import "src/styles/index";
+
+.artist {
+  display: flex;
+  flex-direction: column;
+  color: $white-color;
+  margin: 50px 0;
+
+  &__container {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 80px;
+  }
+
+  &__title {
+    @include font-semi-bold-xl;
+    margin: 0 0 30px;
+  }
+  
+  &__link {
+    @include font-normal-m1;
+    color: $red-color;
+    text-decoration: underline;
+  }
+
+  &__description {
+    @include font-normal-m1;
+
+    a {
+      color: $red-color;
+    }
+  }
+}

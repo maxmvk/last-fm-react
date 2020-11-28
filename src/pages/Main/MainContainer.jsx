@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Main from './Main';
-import { getUserThunk } from '../../store/tracks-reducer';
+import { getTracksThunk } from '../../store/tracks-reducer';
 
 class MainContainer extends React.Component {
 
   componentDidMount() {
-    this.props.getUserThunk();
+    this.props.getTracksThunk();
   }
 
   render() {
@@ -22,4 +22,4 @@ let mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps, { getUserThunk })(MainContainer);
+export default connect(mapStateToProps, { getTracksThunk })(MainContainer);

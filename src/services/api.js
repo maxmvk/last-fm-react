@@ -16,5 +16,10 @@ export const api = {
   async getArtistInfo(artistName) {
     const response = await instance.get(`?method=artist.getinfo&artist=${artistName}&api_key=${API_KEY}&format=json`);
     return response.data;
+  },
+
+  async getSearchResult(data) {
+    const response = await instance.get(`?method=track.search&track=${data}&api_key=${API_KEY}&format=json`);
+    return response.data;
   }
 };

@@ -23,7 +23,7 @@ const tracksReducer = (state = initialState, action) => {
 
 export const setTracks = (tracks) => ({ type: SET_TRACKS, tracks })
 
-export const getUserThunk = () => {
+export const getTracksThunk = () => {
   return (dispatch) => {
     api.getTopTracks()
     .then(data => {
