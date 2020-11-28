@@ -1,0 +1,40 @@
+@import "src/styles/index";
+
+.track {
+  display: flex;
+  color: $white-color;
+  margin: 30px 0;
+  padding: 30px 0;
+  border-bottom: 1px solid $dark-grey-color;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 80px;
+  }
+
+  &__title {
+    @include font-semi-bold-l;
+    margin: 0;
+  }
+
+  &__artist {
+    @include font-normal-m3;
+    color: $light-grey-color;
+    height: 45px;
+    margin: 15px 0;
+    background-size: 0 3px, 100% 3px;
+    transition: background-size .2s linear;
+    cursor: pointer;
+
+    &:hover {
+      @include underlined-text($red-color);
+    }
+  }
+  
+  &__link {
+    color: $red-color;
+    text-decoration: underline;
+  }
+}
