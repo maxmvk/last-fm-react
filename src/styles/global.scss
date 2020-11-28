@@ -1,0 +1,18 @@
+@import "var/index.scss";
+
+body { 
+  background-color: $black-color;
+}
+
+button, button:active, button:focus {
+  border: none;
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}

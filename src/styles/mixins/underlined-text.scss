@@ -1,0 +1,6 @@
+@mixin underlined-text($color, $bg-size : 100%) {
+  background-image: linear-gradient(to right, $color, $color);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: $bg-size 3px;
+}
