@@ -1,0 +1,39 @@
+@import "src/styles/index";
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+  background-color: $black-color;
+  padding: 30px 50px;
+
+  &__logo {
+    max-width: 150px;
+  }
+
+  &__nav {
+    display: flex;
+    padding-left: 50px;
+  }
+
+  &__link {
+    @include font-normal-m3;
+    height: 45px;
+    white-space: nowrap;
+    margin: 0 10px;
+    color: $light-grey-color;
+    background-size: 0 3px, 100% 3px;
+    transition: background-size .2s linear;
+
+    &:hover {
+      @include underlined-text($red-color);
+    }
+  }
+
+  &__link_active {
+    @include underlined-text($red-color);
+    color: $white-color;
+  }
+}
