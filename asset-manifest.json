@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/last-fm-react/static/css/main.8598be7b.chunk.css",
+    "main.js": "/last-fm-react/static/js/main.aee9f0a8.chunk.js",
+    "main.js.map": "/last-fm-react/static/js/main.aee9f0a8.chunk.js.map",
+    "runtime-main.js": "/last-fm-react/static/js/runtime-main.9eb7867b.js",
+    "runtime-main.js.map": "/last-fm-react/static/js/runtime-main.9eb7867b.js.map",
+    "static/js/2.19ee6ea4.chunk.js": "/last-fm-react/static/js/2.19ee6ea4.chunk.js",
+    "static/js/2.19ee6ea4.chunk.js.map": "/last-fm-react/static/js/2.19ee6ea4.chunk.js.map",
+    "static/js/3.6e99a499.chunk.js": "/last-fm-react/static/js/3.6e99a499.chunk.js",
+    "static/js/3.6e99a499.chunk.js.map": "/last-fm-react/static/js/3.6e99a499.chunk.js.map",
+    "index.html": "/last-fm-react/index.html",
+    "static/css/main.8598be7b.chunk.css.map": "/last-fm-react/static/css/main.8598be7b.chunk.css.map",
+    "static/js/2.19ee6ea4.chunk.js.LICENSE.txt": "/last-fm-react/static/js/2.19ee6ea4.chunk.js.LICENSE.txt",
+    "static/media/logo.c09e3064.png": "/last-fm-react/static/media/logo.c09e3064.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9eb7867b.js",
+    "static/js/2.19ee6ea4.chunk.js",
+    "static/css/main.8598be7b.chunk.css",
+    "static/js/main.aee9f0a8.chunk.js"
+  ]
+}
